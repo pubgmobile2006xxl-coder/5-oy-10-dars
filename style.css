@@ -9,7 +9,7 @@ body {
 }
 
 #input {
-  width: 100%;
+  width: 93%;
   height: 40px;
   background: none;
   padding-left: 10px;
@@ -34,6 +34,7 @@ body {
   padding: 20px;
   text-align: center;
   color: white;
+  transition: all 1s ease-in-out;
 }
 .card a {
   font-weight: 700;
