@@ -110,4 +110,7 @@ function renderUsers(data) {
     </div>
         `).join("")
 }
-renderUsers();
+
+searchInput.addEventListener("input", function(e){
+    data = e. target.value.toLowerCase().includes();
+})
