@@ -81,16 +81,33 @@ let datas = [
         "email": "zafar@mail.com",
         "job": "Software Engineer",
         "city": "Bukhara"
+    },
+    {
+        "id": 11,
+        "name": "Odiljon Boltaev",
+        "age": 29,
+        "email": "zafar@mail.com",
+        "job": "Software Engineer",
+        "city": "Bukhara"
+    },
+    {
+        "id": 12,
+        "name": "Mamaraim Teshmat",
+        "age": 29,
+        "email": "zafar@mail.com",
+        "job": "Software Engineer",
+        "city": "Bukhara"
     }
 ]
 
 function renderUsers(data) {
     container.innerHTML = datas.map(data => `
-    <div>
-        <img src="https://picsum.photos/id/${data.id}" alt="">
-        <h1></h1>
-        <p></p>
-        <a href="#"></a>
+    <div keys= "el.id" class = "card">
+        <img src="https://picsum.photos/id/${data.id}/200/200" alt="">
+        <h1>${data.name}</h1>
+        <p>${data.age}</p>
+        <a href="#">${data.email}</a>
     </div>
-        `)
+        `).join("")
 }
+renderUsers();
